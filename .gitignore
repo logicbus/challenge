@@ -36,7 +36,7 @@ xmlrpc.php
 /modules
 /profiles
 /scripts
-/themes
+# /themes
 /vendor
 /core
 /sites
