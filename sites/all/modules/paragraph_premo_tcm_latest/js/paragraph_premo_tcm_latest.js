@@ -1,6 +1,6 @@
-console.log('paragraph_premo_tcm_latest.js');
+// console.log('paragraph_premo_tcm_latest.js');
 $ = jQuery;
-console.log($().jquery);
+// console.log($().jquery);
 
 var jsonUrl = 'https://api.tcm.com/tcmws/v1/vod/latest/6.json';
 var targetEl = '.latest_six';
@@ -8,16 +8,16 @@ var targetEl = '.latest_six';
 $(init);
 
 function init() {
-	console.log('init()');
+	// console.log('init()');
 	$.getJSON( jsonUrl, processJson );
 }
 
 
 function processJson(data) {
 
-	console.log('processJson()');
+	// console.log('processJson()');
 
-	console.log(data);
+	// console.log(data);
 
 	$.each(data.tcm.titles, getTitleMarkup);
 
@@ -26,17 +26,17 @@ function processJson(data) {
 
 function getTitleMarkup(index, title) {
 
-	console.log('getTitleMarkup()');
+	// console.log('getTitleMarkup()');
 
 
 
-	console.log('cut : ' + getCutByUsage(title.imageProfiles, 'homepageLiveImage', true));
+	// console.log('cut : ' + getCutByUsage(title.imageProfiles, 'homepageLiveImage', true));
 	// console.log('cut : ' + getCutByUsage(title.imageProfiles, 'homepageLiveImage'));
 
 
-	console.log('title.name : ' + title.name);
-	console.log('title.releaseYear : ' + title.releaseYear);
-	console.log('title.description : ' + title.description);
+	// console.log('title.name : ' + title.name);
+	// console.log('title.releaseYear : ' + title.releaseYear);
+	// console.log('title.description : ' + title.description);
 
 
 	var mu = '';
