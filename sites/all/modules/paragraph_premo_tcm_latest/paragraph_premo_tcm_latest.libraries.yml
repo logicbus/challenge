@@ -1,0 +1,9 @@
+paragraph_premo_tcm_latest:
+  css:
+    theme:
+      css/paragraph_premo_tcm_latest.css: {}
+  scss:
+    theme:
+      scss/paragraph_premo_tcm_latest.scss: {}
+  js:
+    js/paragraph_premo_tcm_latest.js: {}

@@ -1,0 +1,53 @@
+.paragraph_premo_tcm_latest {
+	/*
+	background-color: #F0F0F0;
+	padding: 7px;
+	margin: 7px;
+	*/
+	padding: 20px 0;
+	text-align: left;
+}
+
+.paragraph_premo_tcm_latest .section_title {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.paragraph_premo_tcm_latest .latest_six {
+}
+
+.paragraph_premo_tcm_latest .film {
+	position: relative;
+	margin-top: 35px;
+	height: 264px;
+
+
+}
+.paragraph_premo_tcm_latest .latest_six .film img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 264px;
+	width: 470px;
+	background-color: #444444;
+}
+
+.paragraph_premo_tcm_latest .latest_six .film .text_area {
+	position: absolute;
+	left: 470px;
+	padding: 75px 35px 0;
+}
+
+.paragraph_premo_tcm_latest .latest_six .film .text_area .title {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: bold;
+}
+.paragraph_premo_tcm_latest .latest_six .film .text_area .title .year {
+
+}
+
+.paragraph_premo_tcm_latest .latest_six .film .text_area .description {
+	font-size: 16px;
+	width: 385px;
+}

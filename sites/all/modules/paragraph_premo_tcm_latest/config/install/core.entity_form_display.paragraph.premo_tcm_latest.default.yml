@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.premo_tcm_latest.field_number_of_movies
+    - paragraphs.paragraphs_type.premo_tcm_latest
+  module:
+id: paragraph.premo_tcm_latest.default
+targetEntityType: paragraph
+bundle: premo_tcm_latest
+mode: default
+content:
+  field_number_of_movies:
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

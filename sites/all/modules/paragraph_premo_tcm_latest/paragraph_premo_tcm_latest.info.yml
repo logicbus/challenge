@@ -1,0 +1,9 @@
+name: 'Premo TCM Latest'
+description: 'Challenge.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - paragraphs
+  - text
+package: 'Premo'

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_number_of_movies
+    - paragraphs.paragraphs_type.premo_tcm_latest
+  module:
+    - options
+id: paragraph.premo_tcm_latest.field_number_of_movies
+field_name: field_number_of_movies
+entity_type: paragraph
+bundle: premo_tcm_latest
+label: 'Number of Movies'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 6
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
