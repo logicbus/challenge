@@ -1,9 +1,12 @@
 paragraph_premo_tcm_latest:
   css:
     theme:
+      css/slick/slick.css: {}
+      css/slick/slick-theme.css: {}
       css/paragraph_premo_tcm_latest.css: {}
   scss:
     theme:
       scss/paragraph_premo_tcm_latest.scss: {}
   js:
     js/paragraph_premo_tcm_latest.js: {}
+    js/slick/slick.min.js: {}

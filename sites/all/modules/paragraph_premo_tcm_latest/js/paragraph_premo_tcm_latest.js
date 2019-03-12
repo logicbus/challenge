@@ -2,14 +2,116 @@
 $ = jQuery;
 // console.log($().jquery);
 
-var jsonUrl = 'https://api.tcm.com/tcmws/v1/vod/latest/6.json';
+var jsonUrl6 = 'https://api.tcm.com/tcmws/v1/vod/latest/6.json';
 var targetEl = '.latest_six';
+
+
+var jsonUrlCarousel = 'https://api.tcm.com/tcmws/v1/vod/latest/12.json';
 
 $(init);
 
 function init() {
 	// console.log('init()');
-	$.getJSON( jsonUrl, processJson );
+	$.getJSON( jsonUrl6, processJson );
+
+
+
+
+	$(".regular").slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		variableWidth: false,
+		centerMode: true
+	});
+
+	$.getJSON( jsonUrlCarousel, processJsonCarousel );
+
+
+}
+
+
+function processJsonCarousel(data) {
+
+
+	// console.log('processJsonCarousel()');
+
+
+	$.each(data.tcm.titles, addSlideMarkup);
+
+
+
+}
+
+function addSlideMarkup(index, title) {
+
+	// console.log('-------------------------------------');
+	// console.log('addSlideMarkup()');
+
+
+
+	// console.log('cut : ' + getCutByUsage(title.imageProfiles, 'homepageExploreThumb', true));
+	// console.log('cut : ' + getCutByUsage(title.imageProfiles, 'homepageExploreThumb'));
+
+
+	// console.log('title.name : ' + title.name);
+	// console.log('title.releaseYear : ' + title.releaseYear);
+	// console.log('title.description : ' + title.description);
+
+
+
+
+
+	// <div class='movie' >
+	// 	<div class='content' >
+	// 		<img src='https://i.cdn.turner.com/v5cache/TCM/Images/Dynamic/i346/TattooedStranger1950_92420_320x179_10092014022429.jpg' />
+	// 		<div class='title_year' >
+	// 			Broadway of a Melody 1940 (1940)
+	// 		</div>
+	// 	</div>
+	// </div>
+
+
+
+
+	var mu = '';
+	mu += '';
+	mu += '<div class=\'movie\' >';
+	mu += '<div class=\'content\' >';
+	mu += '';
+	mu += '<img class=\'\' src=\'' + getCutByUsage(title.imageProfiles, 'homepageExploreThumb', true) + '\' alt=\'' + title.name + ' (' + title.releaseYear + ')' + '\' />';
+	mu += '';
+	mu += '<div class=\'title_year\' >';
+	mu += '';
+	mu += '';
+	mu += title.name;
+	mu += ' (';
+	mu += title.releaseYear;
+	mu += ')';
+	mu += '';
+	mu += '</div>';
+	mu += '';
+	mu += '';
+	mu += '';
+	mu += '';
+	mu += '</div>';
+	mu += '';
+	mu += '';
+	mu += '';
+	mu += '';
+	mu += '';
+	mu += '</div>';
+	mu += '';
+	mu += '';
+
+
+	// return mu;
+
+	// $(targetEl).append(mu);
+
+	$('.regular').slick('slickAdd', mu);
+
+
 }
 
 
