@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Premo TCM Autocomplete.
+ */
+
+/**
+ * Challenge.
+ */
+function paragraph_premo_tcm_autocomplete_preprocess_paragraph__premo_tcm_autocomplete(&$variables) {
+
+}

@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: premo_tcm_autocomplete
+label: 'Premo TCM Autocomplete'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

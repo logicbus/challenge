@@ -1,0 +1,11 @@
+paragraph_premo_tcm_autocomplete:
+  css:
+    theme:
+      css/paragraph_premo_tcm_autocomplete.css: {}
+  scss:
+    theme:
+      scss/paragraph_premo_tcm_autocomplete.scss: {}
+  js:
+    js/jquery-ui-1.12.1.custom.min.js: {}
+    js/data.js: {}
+    js/paragraph_premo_tcm_autocomplete.js: {}
