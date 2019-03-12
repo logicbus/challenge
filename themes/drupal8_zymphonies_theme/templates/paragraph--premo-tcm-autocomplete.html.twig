@@ -1,0 +1,43 @@
+{{ attach_library('paragraph_premo_tcm_autocomplete/paragraph_premo_tcm_autocomplete') }}
+
+<div class='paragraph_premo_tcm_autocomplete' >
+
+	<div class='section_title' >
+		Search for movies on TCMDb
+	</div>
+
+	<div class='form' >
+
+
+
+		<input disabled='true' class="form-control" id="movie_search" placeholder="start typing" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" />
+
+
+{#
+		<input class="form-control" id="movie_search" placeholder="start typing" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" /> #}
+
+		<div class='movie_viewer empty' >
+			<div class='image_area' >
+				<img src='' />
+			</div>
+			<div class='text_area' >
+
+				<div class='movie_detail' >
+					<span class='label' >Title:</span> <span class='title_data' >Casablanca</span>
+				</div>
+				<div class='movie_detail' >
+					<span class='label' >Title ID:</span> <span class='title_id_data' >Casablanca</span>
+				</div>
+				<div class='movie_detail' >
+					<span class='label' >Runtime:</span> <span class='runtime_data' >Casablanca</span>
+				</div>
+				<div class='movie_detail' >
+					<span class='label' >Synopsis:</span> <span class='synopsis_data' >Casablanca</span>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
