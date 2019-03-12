@@ -31,6 +31,24 @@ function init() {
 }
 
 
+function moveTheToBeginningOfTitle(titleIn) {
+	var title = titleIn;
+	title = $.trim(title);
+
+	// console.log('title.substr(title.length - 5) : ' + title.substr(title.length - 5));
+
+	if (title.substring(title.length - 5) === ', The') {
+		console.log('it\'s a THE!');
+
+		title = 'The ' + title.substring(0, (title.length - 5));
+	}
+
+
+	// console.log(title);
+
+	return title;
+}
+
 function processJsonCarousel(data) {
 
 
@@ -84,7 +102,7 @@ function addSlideMarkup(index, title) {
 	mu += '<div class=\'title_year\' >';
 	mu += '';
 	mu += '';
-	mu += title.name;
+	mu += moveTheToBeginningOfTitle(title.name);
 	mu += ' (';
 	mu += title.releaseYear;
 	mu += ')';
@@ -141,6 +159,11 @@ function getTitleMarkup(index, title) {
 	// console.log('title.description : ' + title.description);
 
 
+	// var prettyTitle = moveTheToBeginningOfTitle(title.name);
+
+
+
+
 	var mu = '';
 	mu += '';
 	mu += '<div class=\'film\' >';
@@ -151,7 +174,7 @@ function getTitleMarkup(index, title) {
 	mu += '';
 	mu += '<div class=\'title\' >';
 	mu += '';
-	mu += title.name;
+	mu += moveTheToBeginningOfTitle(title.name);
 	mu += '';
 	mu += '<span class=\'year\' >';
 	mu += ' (';
